@@ -25,7 +25,10 @@ See the [Wallet Topic Page](https://developer.apple.com/wallet/) and the
 1) Get a Pass Type Id
 
 * Visit the iOS Provisioning Portal -> Pass Type IDs -> New Pass Type ID
+* Create CSR in Keychain Access, save to Disk
 * Select pass type id -> Configure (Follow steps and download generated pass.cer file)
+* Download pass.cer, import into Keychain Access
+* Sort Keychain Access into login -> Certificates
 * Use Keychain tool to export a Certificates.p12 file (need Apple Root Certificate installed)
 
 2) Generate the necessary certificate
