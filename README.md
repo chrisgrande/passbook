@@ -34,12 +34,12 @@ See the [Wallet Topic Page](https://developer.apple.com/wallet/) and the
 2) Generate the necessary certificate
 
 ```shell
-    $ openssl pkcs12 -in "Certificates.p12" -clcerts -nokeys -out certificate.pem   
+/usr/bin/openssl pkcs12 -in "Certificates.p12" -clcerts -nokeys -out certificate.pem   
 ```
 3) Generate the key.pem
 
 ```shell
-    $ openssl pkcs12 -in "Certificates.p12" -nocerts -out private.key
+/usr/bin/openssl pkcs12 -in "Certificates.p12" -nocerts -out private.key
 ```
 
 You will be asked for an export password (or export phrase). In this example it will be `123456`, the script will use this as an argument to output the desired `.pkpass`
